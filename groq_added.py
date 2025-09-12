@@ -5,7 +5,7 @@ from langchain.memory import ConversationSummaryMemory
 
 # Initialize LLM (Groq)
 llm = ChatGroq(
-    groq_api_key="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", 
+    groq_api_key="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", 
     model_name="llama-3.3-70b-versatile"
 )
 
@@ -111,5 +111,6 @@ if "chat_history" in st.session_state:
 # Debugging: Show summary
 if st.checkbox("Show Memory Summary"):
     st.write(st.session_state.memory.buffer)
+
 
 
